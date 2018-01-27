@@ -1,15 +1,18 @@
 /* *{border: 1px solid red !important;} */
 /* HEADER */
+body{
+  min-height: 100vh;
+}
 header{
+  width: 100%;
   height: 100px;
   letter-spacing: .08em;
-  /* border-bottom: 3px solid whitesmoke; */
-  box-shadow: 0 0px 3px 3px #aaa;
+  border-bottom: 3px solid whitesmoke;
 }
 
 .flexRow{
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -35,7 +38,26 @@ header{
   border-right: 2px solid grey;
 }
 /* MAIN */
+.flexCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 main{
+  flex-grow: 2;
+  width: 100%;
   background-image: url('../images/arches.png');
   background-repeat: repeat;
+}
+
+/* FOOTER */
+footer{
+  position:absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  border-top: 5px solid #4aaaa5;
+  background-color: #666;
+  color: white;
 }
