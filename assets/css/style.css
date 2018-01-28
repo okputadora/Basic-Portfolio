@@ -20,7 +20,7 @@ header{
 
 .flexRow{
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -89,6 +89,7 @@ h2{
 
 h3{margin: 7px 0 7px 0;}
 
+/* CONTACT */
 p{
   padding: 5px;
 }
@@ -100,6 +101,29 @@ textarea{
   width: 550px;
   height: 200px;
 }
+
+.submit{
+  font-size: 20px;
+  border: 1px solid #4aaaa5;
+  color: #4aaaa5;
+  background-color: white;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.submit:hover{
+  color: white;
+  background-color: #4aaaa5;
+}
+/* PORTFOLIO */
+.projects{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.project{
+  padding: 5px;
+}
+img{width: 250px;}
 .socials{
   align-self: flex-start;
   width: 270px;
