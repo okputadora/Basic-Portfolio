@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Michael McVeigh: Contact</title>
+    <title>Michael McVeigh</title>
     <link rel='stylesheet' type='text/css' href='assets/css/reset.css' />
     <link rel='stylesheet' type='text/css' href='assets/css/style.css' />
-
+    <script src="https://use.fontawesome.com/041a8a6fad.js"></script>
 </head>
 <body class='flexCol'>
   <header class='flexRow'>
@@ -16,12 +16,29 @@
     </div>
   </header>
   <main>
-    <section class='contentArea'>
-      <div class='aboutMe'></div>
-      <div class='socials'></div>
+    <section class='flexRow contentArea'>
+      <div class='aboutMe content'>
+        <h2 class='sectionName'>Conact</h2>
+        <form action='contactRequest' type='POST' id='contact'>
+          <h3>Name</h3>
+          <input type='text' name='name' placeholder='Brent Spiner' />
+          <h3>Email</h3>
+          <input type='text' name='email' placeholder='bspiner@tng.com' />
+          <h3>Message</h3>
+          <textarea name='message' form='contact'></textarea>
+        </form>
+      </div>
+      <div class='socials content'>
+        <h2 class='sectionName'>Connect with Me</h2>
+        <div class='flexRow socialIcons'>
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+        </div>
+      </div>
     </section>
   </main>
   <footer class='flexCol'>
-    <div class='copyright'>(C) Michael McVeigh 2018</div>
+    <div class='copyright'>© Michael McVeigh 2018</div>
   </footer>
 </body>
