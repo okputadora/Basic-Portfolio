@@ -96,6 +96,7 @@ p{
   padding: 5px;
 }
 .profilePic{
+  width: 250px;
   padding: 7px;
   float: left;
 }
